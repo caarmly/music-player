@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    font-family: Cambria, serif; 
+    text-align: center;
+    background: #222;
+    color: #7b90bc;
+    background-image: url(image/bg1.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    text-align: center; 
+    font-size: 10px;
+    z-index: 100; /* Đảm bảo footer nằm trên các phần tử khác */
+}
+
+p {
+    font-size: 10px;
+    color: rgb(211, 214, 228);
+}
+.music-container-wrapper {
+    display: flex; /* Sử dụng flexbox để hiển thị các phần chứa nhạc theo chiều ngang */
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không đủ chỗ */
+    justify-content: center; /* Căn giữa các phần tử */
+}
+
+.music-container {
+    width: 150px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    background-color: rgba(159, 173, 221, 0.8);
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.controls button {
+    font-size: 16px; /* Kích thước icon */
+    color: #abccdd; /* Màu sắc icon */
+}
+
+.controls button:hover {
+    background-color: rgba(45, 88, 175, 0.4); /* Màu nền khi di chuột */
+}
+
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#progress {
+    width: 100%;
+    margin-top: 10px;
+}
