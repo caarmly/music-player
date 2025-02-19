@@ -15,6 +15,27 @@ header {
     margin-bottom: 20px;
 }
 
+header input{
+    padding: 8px;
+    font-size: 10px;
+    border-radius: 20px;
+    font-family: Cambria, serif; 
+    background-color: rgba(219, 225, 246, 0.8);
+    color: #7b90bc;
+    width: 50%;
+    border: 1px white;
+}
+
+header button {
+    padding: 8px;
+    font-size: 10px;
+    border-radius: 15px;
+    font-family: Cambria, serif; 
+    background-color: rgba(126, 136, 166, 0.8);
+    color: white;
+    border: 1px white;
+}
+
 footer {
     position: fixed; 
     bottom: 0; 
@@ -30,10 +51,13 @@ p {
     color: rgb(211, 214, 228);
 }
 .music-container-wrapper {
-    display: flex; /* Sử dụng flexbox để hiển thị các phần chứa nhạc theo chiều ngang */
-    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không đủ chỗ */
-    justify-content: center; /* Căn giữa các phần tử */
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Căn giữa theo chiều ngang */
+    height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
 }
+
 
 .music-container {
     width: 150px;
@@ -66,10 +90,11 @@ button {
     padding: 5px;
     border: none;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 #progress {
     width: 100%;
     margin-top: 10px;
 }
+

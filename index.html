@@ -3,92 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ZingZong</title>
+    <link rel="icon" href="image/bluesky-brands.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style-index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
+<script src="script.js"></script>
 <body>
     <header>
-        <h1 style="text-align: center;">Favourite Songs</h1>
+        <h1 style="text-align: center;">ZingZing ZongZong</h1>
+        <input type="text" id="search" placeholder="Enter name song or name singer ...">
+        <button onclick="">Search</button>
     </header>
 
-    <div class="music-container-wrapper">
-        <div class="music-container">
-            <img id="cover" src="image/ctctl.jpg" alt="">
-            <h5 id="title">Chúng ta của tương lai</h5>
-            <p>Sơn Tùng MTP</p>
+<div class="slide-show">
+    <button id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button> <!-- Nút lùi -->
+    <div class="list-images">
+        <img src="image/banner1.jpg" alt="Taylor">
+        <img src="image/banner2.jpg" alt="V-pop">
+        <img src="image/banner3.jpg" alt="K-pop">
+    </div>
+    <button id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button> <!-- Nút tiến -->
+</div>
 
-            <audio id="audio" src="music/SƠN TÙNG M-TP  CHÚNG TA CỦA TƯƠNG LAI  OFFICIAL MUSIC VIDEO.mp3"></audio>
 
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-
+    <div class="album-container" id="album-container">
+        <div class="album" id="album">
+            <a href="usuk.html">
+                <div class="music-container">
+                    <img src="image/taylor.jpg" alt="">
+                    <h5>US-UK</h5>
+                </div>
+            </a>
+        </div>
+    
+        <div class="album">
+            <a href="vpop.html">
+                <div class="music-container">
+                    <img src="image/vpop.jpg" alt="">
+                    <h5>V-pop</h5>
+                </div>
+            </a>
         </div>
 
-        <div class="music-container">
-            <img id="cover" src="image/matketnoi.jpg" alt="">
-            <h5 id="title">Mất kết nối</h5>
-            <p>Dương Domic</p>
-            <audio id="audio" src="music/Mất Kết Nối (Theron Remix) - Dương Domic  Nỗi Nhớ Em Trong Đêm Thật Dài Remix TikTok.mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
+        <div class="album">
+            <a href="kpop.html">
+                <div class="music-container">
+                    <img src="image/kpop.jpg" alt="">
+                    <h5>K-pop</h5>
+                </div>
+            </a>
         </div>
 
-        <div class="music-container">
-            <img id="cover" src="image/toxic.jpg" alt="">
-            <h5 id="title">Toxic till the end</h5>
-            <p>Rose</p>
-            <audio id="audio" src="music/ROSE - toxic till the end (Lyrics).mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
+        <div class="album">
+            <a href="remix.html">
+                <div class="music-container">
+                    <img src="image/remix.jpg" alt="">
+                    <h5>Remix</h5>
+                </div>
+            </a>
         </div>
 
-        <div class="music-container">
-            <img id="cover" src="image/tran bo nho.jpg" alt="">
-            <h5 id="title">Tràn bộ nhớ</h5>
-            <p>Dương Domic</p>
-            <audio id="audio" src="music/Tràn Bộ Nhớ - Dương Domic  Lyrics Video.mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-        </div>
-
-        <div class="music-container">
-            <img id="cover" src="image/wrongtime.jpg" alt="">
-            <h5 id="title">Wrong Time</h5>
-            <p>Dangrangto</p>
-            <audio id="audio" src="music/puppy & @Dangrangto  - Wrong Times ( ft. FOWLEX Snowz ) [OFFICIAL LYRICS VIDEO].mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
+        <div class="album">
+            <a href="rap.html">
+                <div class="music-container">
+                    <img src="image/rap.jpg" alt="">
+                    <h5>Rap</h5>
+                </div>
+            </a>
         </div>
     </div>
 
@@ -96,6 +80,6 @@
         <h5>@2025 Design by caarmly</h5>
     </footer>
 
-    <script src="script.js"></script>
+ 
 </body>
 </html>
