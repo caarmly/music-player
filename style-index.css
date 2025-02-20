@@ -5,13 +5,14 @@ body {
     text-align: center;
     background: #222;
     color: #7b90bc;
-    background-image: url(image/bg1.jfif);
+    background-image: url(image/bg/bg1.jfif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
 }
 
 header {
+    height: 20%;
     margin-bottom: 20px;
 }
 
@@ -37,16 +38,17 @@ header button {
 }
 
 footer {
-    position: fixed; 
+    /* position: fixed; 
     bottom: 0; 
     left: 0; 
-    right: 0;
+    right: 0; */
     text-align: center; 
     font-size: 10px;
     z-index: 100; /* Đảm bảo footer nằm trên các phần tử khác */
 }
 
 .album-container {
+    height: 30%;
     display: flex; /* Sử dụng flexbox để hiển thị các phần chứa nhạc theo chiều ngang */
     flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không đủ chỗ */
     justify-content: center; /* Căn giữa các phần tử */
@@ -83,8 +85,8 @@ button {
 }
 
 .slide-show{
-    width: 50%;
-    height: 320px;
+    width: 79%;
+    height: 50%;
     overflow: hidden;
     position: relative;
     margin: 20px auto; /* Căn giữa theo chiều ngang */
