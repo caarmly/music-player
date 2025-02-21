@@ -4,189 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZingZong</title>
-    <link rel="icon" href="image/bg/bluesky-brands.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data/image/bg/bluesky-brands.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header>
         <h1 style="text-align: center;">Cpop</h1>
-        <input type="text" id="search" placeholder="Enter name song or name singer ...">
-        <button onclick="">Search</button>
     </header>
 
-    <div class="music-container-wrapper">
-        <div class="music-container">
-            <img id="cover" src="image/cpop/chamchu.jpg" alt="">
-            <h5 id="title">Chăm Chú</h5>
-            <p>Đinh Vũ Hề</p>
-            <audio id="audio" src="music/cpop/[Vietsub] Chăm chú - Đinh Vũ Hề  凝眸 - 丁禹兮  Vĩnh dạ tinh hà 永夜星河 OST.mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-        </div>
-
-        <div class="music-container">
-            <img id="cover" src="image/cpop/dangtrao.jpg" alt="">
-            <h5 id="title">Dâng Trào</h5>
-            <p>Ngu Thư Hân</p>
-            <audio id="audio" src="music/cpop/[Vietsub] Dâng Trào - Ngu Thư Hân  OST Vĩnh Dạ Tinh Hà  澎湃 - 虞书欣  永夜星河OST.mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-        </div>
-
-        <div class="music-container">
-            <img id="cover" src="image/cpop/gioxuan.jpg" alt="">
-            <h5 id="title">Gió xuân không hỏi</h5>
-            <p>Trần Đô Linh</p>
-            <audio id="audio" src="music/cpop/[Vietsub+Pinyin] Gió xuân không hỏi - Trần Đô Linh - ĐẠI MỘNG QUY LY OST｜春风不问 - 陈都灵 - 大梦归离文潇·人物曲 [5KEzECCECg8].mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-        </div>
-
-        <div class="music-container">
-            <img id="cover" src="image/cpop/kyminhnguyet.jpg" alt="">
-            <h5 id="title">Ký Minh Nguyệt</h5>
-            <p>Đinh Vũ Hề, Ngu Thư Hân...</p>
-            <audio id="audio" src="music/cpop/[Vietsub] Ký Minh Nguyệt - Vĩnh Dạ Tinh Hà OST  寄明月 - 永夜星河OST.mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-        </div>
-
-        <div class="music-container">
-            <img id="cover" src="image/cpop/matdikyuc.jpg" alt="">
-            <h5 id="title">Mất đi ký ức</h5>
-            <p>Ngu Thư Hân</p>
-            <audio id="audio" src="music/cpop/[Vietsub] Mất đi ký ức - Ngu Thư Hân  Nhạc phim Thương Lan Quyết 失忆虞书欣 Esther Yu 苍兰诀 OST.mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-        </div>
-
-        <div class="music-container">
-            <img id="cover" src="image/cpop/timnang.jpg" alt="">
-            <h5 id="title">Tìm một mình nàng</h5>
-            <p>Lưu Vũ Ninh</p>
-            <audio id="audio" src="music/cpop/[Vietsub] Tìm một mình nàng - Lưu Vũ Ninh  寻一个你 - 刘宇宁  Thương Lan Quyết OST.mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-        </div>
-
-        <div class="music-container">
-            <img id="cover" src="image/cpop/vienchauthieunien.jpg" alt="">
-            <h5 id="title">Viễn Châu lúc thiếu niên</h5>
-            <p>Hầu Minh Hạo</p>
-            <audio id="audio" src="music/cpop/[VietsubPinyin] Viễn Châu lúc thiếu niên - Hầu Minh Hạo - ĐẠI MỘNG QUY LY远舟的少年 - 侯明昊 - 大梦归离赵远舟人物曲.mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-        </div>
-
-        <div class="music-container">
-            <img id="cover" src="image/cpop/thiendiavoluan.jpg" alt="">
-            <h5 id="title">Thiên địa vô luân</h5>
-            <p>Diêm An</p>
-            <audio id="audio" src="music/cpop/[Vietsub+Pinyin] Thiên địa vô luân - Diêm An - ĐẠI MỘNG QUY LY OST｜天地无仑 - 闫桉 - 大梦归离离仑·人物曲 [XyRTT-llTA8].mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-        </div>
-
-        <div class="music-container">
-            <img id="cover" src="image/bg/cpop.jpg" alt="">
-            <h5 id="title">No name</h5>
-            <p>No name</p>
-            <audio id="audio" src="music/cpop/【纯享版】张郁梓《负重一万斤长大》 丨#舞台2023 The Next EP10丨#TheNext [Qc2NT52XBFk].mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-        </div>
-
-        <div class="music-container">
-            <img id="cover" src="image/cpop/cauthonhonho.jpg" alt="">
-            <h5 id="title">Câu thơ nhỏ</h5>
-            <p>No name</p>
-            <audio id="audio" src="music/cpop/[Vietsub_Pinyin] CÂU THƠ NHỎ ( Đại Mộng Quy Ly OST) _ 小诗句 【大梦归离 OST】 [jfnDz9tBpfo].mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-        </div>
-
-        <div class="music-container">
-            <img id="cover" src="image/cpop/tinhve.jpg" alt="">
-            <h5 id="title">Tinh vệ</h5>
-            <p>Trương Úc Tử</p>
-            <audio id="audio" src="music/cpop/Tinh Vệ (精卫) - Trương Úc Tử [I-yE50E0ISQ].mp3"></audio>
-
-            <input type="range" id="progress" value="0">
-
-            <div class="controls">
-                <button id="prev"><i class="fas fa-backward"></i></button>
-                <button id="play"><i class="fas fa-play"></i></button>
-                <button id="next"><i class="fas fa-forward"></i></button>
-            </div>
-        </div>
+    <div class="music-container-wrapper" id="musicWrapper">
+        <!-- Nội dung sẽ được tạo động bằng JavaScript -->
     </div>
 
     <footer>
         <h5>@2025 Design by caarmly</h5>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="data/cpop.js"></script>
+    <script src="js/player.js"></script>
+    <script>
+        const player = new MusicPlayer(CPOP_SONGS);
+    </script>
 </body>
 </html>
